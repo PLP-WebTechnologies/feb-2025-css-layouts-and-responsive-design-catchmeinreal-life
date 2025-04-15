@@ -1,0 +1,180 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    background-color: bisque;
+}
+
+
+.navTab {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0% auto;
+    gap: 50px;
+    
+    background-color: aliceblue;
+}
+
+.navTab>nav {
+    background-color: crimson;
+}
+.navTab>nav>ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navTab .btn-cont{
+
+}
+
+
+
+.hero-cont{
+    position: relative;
+
+    max-width: 1000px;
+    /* left: auto; */
+    
+    margin: 0 auto;
+    border: 5px solid salmon;
+}
+
+.hero-sec{
+}
+.hero-sec img{
+    width: 100%;
+    height: auto;
+    /* border: none; */
+}
+.hero-content{
+    position: absolute;
+    /* text-align: center; */
+    top: 20%;
+    font-size: 3rem;
+    
+    color: aliceblue;
+    /* width: 90%; */
+}
+.hero-content>button{
+    margin-left: 3rem;
+    padding: 15px 20px;
+    font-size:medium;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    /* color: crimson; */
+}
+
+
+/* responsiveness */
+@media (max-width : 722px) {
+    .hero-cont{
+        position: relative;
+    }
+    .hero-content{
+        top: 10%;
+        font-size: 2.5rem;
+        
+        color: aliceblue;
+    }
+    .btn-cont{
+        display: none;
+    }
+
+    .navTab {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0% auto;
+        
+    }
+}
+
+@media (max-width: 544px) {
+    nav{
+        display: none;
+    }
+    .hero-content{
+        position: absolute;
+        top: 13%;
+        font-size: 2rem;
+        color: aliceblue;
+    }
+    .hero-content>button{
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+        padding: 10px 15px;
+        font-size:small;
+        border-radius: 13px;
+        border: none;
+        cursor: pointer;
+        /* color: crimson; */
+    }
+}
+@media (max-width: 440px) {
+    nav{
+        display: none;
+    }
+    .hero-content{
+        position: absolute;
+        top: 10%;
+        font-size: 1.4rem;
+        color: aliceblue;
+    }
+    .hero-content>button{
+        margin-left: 1.0rem;
+        margin-top: 0.8rem;
+        padding: 8px 13px;
+        font-size:small;
+        border-radius: 13px;
+        border: none;
+        cursor: pointer;
+        /* color: crimson; */
+    }
+}
+@media (max-width: 288px) {
+    nav{
+        display: none;
+    }
+    .hero-content{
+        position: absolute;
+        top: 8%;
+        font-size: 1.0rem;
+        color: aliceblue;
+    }
+    .hero-content>button{
+        margin-left: 1.0rem;
+        margin-top: 0.8rem;
+        padding: 8px 13px;
+        font-size:small;
+        border-radius: 13px;
+        border: none;
+        cursor: pointer;
+        /* color: crimson; */
+    }
+}
+@media (max-width: 260px) {
+    nav{
+        display: none;
+    }
+    .hero-content{
+        position: absolute;
+        top: 3%;
+        font-size: 0.8rem;
+        color: aliceblue;
+    }
+    .hero-content>button{
+        margin-left: 1.0rem;
+        margin-top: 0.6rem;
+        padding: 5px 10px;
+        font-size:small;
+        border-radius: 13px;
+        border: none;
+        cursor: pointer;
+        /* color: crimson; */
+    }
+}
